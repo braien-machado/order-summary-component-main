@@ -55,7 +55,7 @@ footer {
   width: 85%;
 }
 
-img {
+#card img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
@@ -63,15 +63,36 @@ img {
 
 h1 {
   font-size: 1.4rem;
-  font-weight: 900;
 }
 
 h1, h4 {
+  font-weight: 900;
   color: var(--dark-blue);
 }
 
-h4, #change {
+#change {
   font-weight: 700;
+}
+
+#plan {
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 25px;
+  padding: 15px 20px;
+}
+
+#plan div {
+  display: flex;
+}
+
+#plan div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
 }
 
 #change {
@@ -84,17 +105,17 @@ h4, #change {
 }
 
 #buttons a {
-  text-decoration: none;
   font-weight: 900;
+  text-decoration: none;
 }
 
 #proceed-button {
   background-color: var(--bright-blue);
   border-radius: 10px;
+  box-shadow: 0 1rem 2rem -1em var(--bright-blue);
   color: white;
   margin: 0 25px;
   padding: 15px 0;
-  box-shadow: 0 1rem 2rem -1em var(--bright-blue);
 }
 
 #cancel-button {
