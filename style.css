@@ -1,19 +1,139 @@
-body {
-  background-color: hsl(225, 100%, 94%);
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 16px;
+:root {
+  --bright-blue: hsl(245, 75%, 52%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+}
+
+* {
   margin: 0;
   padding: 0;
 }
 
-img {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
+body {
+  background-color: var(--pale-blue);
+  color: var(--desaturated-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+}
+
+@media (max-width: 375px) {
+  #page-container {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 376px) {
+  #page-container {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+#page-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 
 footer {
   bottom: 0;
-  position: fixed;
+  position: absolute;
+}
+
+#card {
+  background-color: white;
+  border-radius: 1.5rem;
+  height: 80%;
+  overflow: hidden;
+  text-align: center;
+  width: 85%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+#card img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+h1, h4 {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+#title-and-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  width: 85%;
+}
+
+#change {
+  font-weight: 700;
+}
+
+#plan {
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 25px 20px;
+  padding: 15px 20px;
+}
+
+#plan div {
+  display: flex;
+}
+
+#plan div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+#change {
+  color: var(--bright-blue);
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#buttons a {
+  font-weight: 900;
+  text-decoration: none;
+  margin-top: 26px;
+}
+
+#proceed-button {
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  box-shadow: 0 1rem 2rem -1em var(--bright-blue);
+  color: white;
+  margin: 0 25px;
+  padding: 15px 0;
+}
+
+#cancel-button {
+  color: inherit;
+  margin: 30px auto;
 }
