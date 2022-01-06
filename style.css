@@ -1,21 +1,28 @@
-body {
-  background-color: hsl(225, 100%, 94%);
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+:root {
+  --bright-blue: hsl(245, 75%, 52%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --very-pale-blue: hsl(225, 100%, 98%);
 }
 
-h1 {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  height: 100vh;
 }
 
 @media (max-width: 375px) {
   #background {
     background-image: url(./images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    z-index: -1;
+    height: 100%;
   }
 }
 
@@ -27,11 +34,28 @@ h1 {
   }
 }
 
-img {
-  
+#background {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
   bottom: 0;
-  position: fixed;
+  position: absolute;
+}
+
+#card {
+  background-color: white;
+  border-radius: 1.5rem;
+  height: 80%;
+  overflow: hidden;
+  text-align: center;
+  width: 85%;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
