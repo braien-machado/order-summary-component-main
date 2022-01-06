@@ -13,6 +13,7 @@
 
 body {
   background-color: var(--pale-blue);
+  color: var(--desaturated-blue);
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
   height: 100vh;
@@ -58,4 +59,44 @@ img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+h1, h4 {
+  color: var(--dark-blue);
+}
+
+h4, #change {
+  font-weight: 700;
+}
+
+#change {
+  color: var(--bright-blue);
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#buttons a {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+#proceed-button {
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  color: white;
+  margin: 0 25px;
+  padding: 15px 0;
+  box-shadow: 0 1rem 2rem -1em var(--bright-blue);
+}
+
+#cancel-button {
+  color: inherit;
 }
