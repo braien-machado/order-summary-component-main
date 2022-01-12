@@ -57,6 +57,7 @@ footer {
   overflow: auto;
   text-align: center;
   width: 318px;
+  box-shadow: 0rem 1.5rem 3rem -2em var(--dark-blue);
 }
 
 #card img {
@@ -67,7 +68,6 @@ footer {
 
 h1 {
   font-size: 1.4rem;
-  /* margin-top: 4%; */
   margin-bottom: 2%;
 }
 
@@ -96,7 +96,6 @@ p {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  /* margin: 4% 25px 4%; */
   padding: 15px 20px;
   margin: 0 25px;
 }
@@ -116,6 +115,11 @@ p {
   color: var(--bright-blue);
 }
 
+#change:hover {
+  color: rgb(128, 102, 175);
+  text-decoration: none;
+}
+
 #buttons {
   display: flex;
   flex-direction: column;
@@ -125,7 +129,6 @@ p {
 #buttons a {
   font-weight: 900;
   text-decoration: none;
-  /* margin-top: 4%; */
 }
 
 #proceed-button {
@@ -137,7 +140,15 @@ p {
   padding: 15px 0;
 }
 
+#proceed-button:hover {
+  background-color: rgb(128, 102, 175);
+}
+
 #cancel-button {
   color: inherit;
   margin: 4% 10% 0;
+}
+
+#cancel-button:hover {
+  color: var(--dark-blue)
 }
