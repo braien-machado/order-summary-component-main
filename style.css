@@ -48,12 +48,15 @@ footer {
 #card {
   background-color: white;
   border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
   height: 516px;
+  justify-content: space-between;
+  max-height: 80%;
+  max-width: 85%;
   overflow: auto;
   text-align: center;
   width: 318px;
-  max-width: 85%;
-  max-height: 80%;
 }
 
 #card img {
@@ -64,8 +67,8 @@ footer {
 
 h1 {
   font-size: 1.4rem;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  /* margin-top: 4%; */
+  margin-bottom: 2%;
 }
 
 h1, h4 {
@@ -93,8 +96,9 @@ p {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  margin: 4% 25px 4%;
+  /* margin: 4% 25px 4%; */
   padding: 15px 20px;
+  margin: 0 25px;
 }
 
 #plan div {
@@ -115,12 +119,13 @@ p {
 #buttons {
   display: flex;
   flex-direction: column;
+  margin-bottom: 8%;
 }
 
 #buttons a {
   font-weight: 900;
   text-decoration: none;
-  margin-top: 4%;
+  /* margin-top: 4%; */
 }
 
 #proceed-button {
@@ -134,5 +139,5 @@ p {
 
 #cancel-button {
   color: inherit;
-  margin: 10%;
+  margin: 4% 10% 0;
 }
