@@ -17,6 +17,7 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
   height: 100vh;
+  position: relative;
 }
 
 @media (max-width: 375px) {
@@ -36,8 +37,8 @@ body {
 #page-container {
   align-items: center;
   display: flex;
-  justify-content: center;
   height: 100%;
+  justify-content: center;
 }
 
 footer {
@@ -48,6 +49,7 @@ footer {
 #card {
   background-color: white;
   border-radius: 1.5rem;
+  box-shadow: 0rem 1.5rem 3rem -2em var(--dark-blue);
   display: flex;
   flex-direction: column;
   height: 516px;
@@ -57,7 +59,6 @@ footer {
   overflow: auto;
   text-align: center;
   width: 318px;
-  box-shadow: 0rem 1.5rem 3rem -2em var(--dark-blue);
 }
 
 #card img {
@@ -72,14 +73,14 @@ h1 {
 }
 
 h1, h4 {
-  font-weight: 900;
   color: var(--dark-blue);
+  font-weight: 900;
 }
 
 #title-and-paragraph {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 p {
@@ -96,8 +97,8 @@ p {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
   margin: 0 25px;
+  padding: 15px 20px;
 }
 
 #plan div {
