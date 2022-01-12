@@ -48,13 +48,16 @@ footer {
 #card {
   background-color: white;
   border-radius: 1.5rem;
-  height: 80%;
-  overflow: hidden;
-  text-align: center;
-  width: 85%;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between; */
+  height: 516px;
+  justify-content: space-between;
+  max-height: 80%;
+  max-width: 85%;
+  overflow: auto;
+  text-align: center;
+  width: 318px;
+  box-shadow: 0rem 1.5rem 3rem -2em var(--dark-blue);
 }
 
 #card img {
@@ -65,8 +68,7 @@ footer {
 
 h1 {
   font-size: 1.4rem;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 2%;
 }
 
 h1, h4 {
@@ -94,8 +96,8 @@ p {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  margin: 40px 25px 20px;
   padding: 15px 20px;
+  margin: 0 25px;
 }
 
 #plan div {
@@ -113,15 +115,20 @@ p {
   color: var(--bright-blue);
 }
 
+#change:hover {
+  color: rgb(128, 102, 175);
+  text-decoration: none;
+}
+
 #buttons {
   display: flex;
   flex-direction: column;
+  margin-bottom: 8%;
 }
 
 #buttons a {
   font-weight: 900;
   text-decoration: none;
-  margin-top: 26px;
 }
 
 #proceed-button {
@@ -133,7 +140,15 @@ p {
   padding: 15px 0;
 }
 
+#proceed-button:hover {
+  background-color: rgb(128, 102, 175);
+}
+
 #cancel-button {
   color: inherit;
-  margin: 30px auto;
+  margin: 4% 10% 0;
+}
+
+#cancel-button:hover {
+  color: var(--dark-blue)
 }
